@@ -1,5 +1,7 @@
 # Jay-Zz Entertainment Data Streaming and Analysis Project
 
+![Alt text](https://memgraph.com/images/blog/develop-smarter-by-uncovering-insights-inside-data-streams-memgraph-cloud-lab/cloud-release-blog-post-2.png)
+
 ## Overview
 
 This project aims to provide Jay-Zz Entertainment with a comprehensive solution for real-time analysis and recommendations based on movie critiques. The system is designed to stream and process movie critique data using Kafka, transform and store it in Memgraph, and enable efficient real-time analysis using Cypher queries. The development environment is containerized using Docker and Docker Compose for seamless deployment.
