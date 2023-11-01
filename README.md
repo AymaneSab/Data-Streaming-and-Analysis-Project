@@ -13,6 +13,69 @@ This project aims to provide Jay-Zz Entertainment with a comprehensive solution 
 - [Analysis and Cypher Queries](#analysis-and-cypher-queries)
 - [GDPR Compliance and Data Governance](#gdpr-compliance-and-data-governance)
 
+## Project Structure 
+
+```
+Entertainment Data Streaming and Analysis Project/
+|-- .gitignore
+|-- README.md
+|-- docker-compose.yml
+|-- deploy/
+|   |-- kubernetes/
+|       |-- deployment.yaml
+|       |-- service.yaml
+|-- src/
+|   |-- main.go
+|   |-- config/
+|       |-- config.go
+|   |-- kafka/
+|       |-- kafka.go
+|   |-- transformation/
+|       |-- transformer.go
+|   |-- memgraph/
+|       |-- memgraph.go
+|   |-- cypher/
+|       |-- queries.go
+|-- tests/
+|   |-- kafka_test.go
+|   |-- transformation_test.go
+|   |-- memgraph_test.go
+|   |-- cypher_test.go
+|-- scripts/
+|   |-- initialize.sh
+|   |-- start.sh
+|   |-- stop.sh
+|-- data/
+|   |-- sample_data.json
+```
+
+## Explanation of each directory/file 
+
+    .gitignore: Specifies files and directories to be ignored by Git.
+    README.md: Project documentation.
+    docker-compose.yml: Configuration file for Docker Compose.
+    deploy/: Contains deployment-related files for different environments.
+        kubernetes/: Kubernetes deployment files.
+    src/: Main source code directory.
+        main.go: Entry point of the application.
+        config/: Configuration package.
+            config.go: Configuration management.
+        kafka/: Kafka-related package.
+            kafka.go: Kafka integration code.
+        transformation/: Transformation module package.
+            transformer.go: Transformation logic.
+        memgraph/: Memgraph integration package.
+            memgraph.go: Memgraph connection and data processing.
+        cypher/: Cypher query package.
+            queries.go: Cypher queries.
+    tests/: Test files for each package.
+    scripts/: Shell scripts for various tasks.
+        initialize.sh: Initialization script.
+        start.sh: Script to start the application.
+        stop.sh: Script to stop the application.
+    data/: Directory for storing data related to the project.
+        sample_data.json: Sample input data for testing.
+
 ## Installation and Configuration
 
 - Set up the development environment using Docker and Docker Compose.
