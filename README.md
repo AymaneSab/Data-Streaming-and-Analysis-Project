@@ -52,32 +52,32 @@ Entertainment Data Streaming and Analysis Project/
 ```
 
 ## Explanation of each directory/file 
-
-    .gitignore: Specifies files and directories to be ignored by Git.
-    README.md: Project documentation.
-    docker-compose.yml: Configuration file for Docker Compose.
-    deploy/: Contains deployment-related files for different environments.
-        kubernetes/: Kubernetes deployment files.
-    src/: Main source code directory.
-        main.go: Entry point of the application.
-        config/: Configuration package.
-            config.go: Configuration management.
-        kafka/: Kafka-related package.
-            kafka.go: Kafka integration code.
-        transformation/: Transformation module package.
-            transformer.go: Transformation logic.
-        memgraph/: Memgraph integration package.
-            memgraph.go: Memgraph connection and data processing.
-        cypher/: Cypher query package.
-            queries.go: Cypher queries.
-    tests/: Test files for each package.
-    scripts/: Shell scripts for various tasks.
-        initialize.sh: Initialization script.
-        start.sh: Script to start the application.
-        stop.sh: Script to stop the application.
-    data/: Directory for storing data related to the project.
-        sample_data.json: Sample input data for testing.
-
+```
+.gitignore: Specifies files and directories to be ignored by Git.
+README.md: Project documentation.
+docker-compose.yml: Configuration file for Docker Compose.
+deploy/: Contains deployment-related files for different environments.
+    kubernetes/: Kubernetes deployment files.
+src/: Main source code directory.
+    main.go: Entry point of the application.
+    config/: Configuration package.
+        config.go: Configuration management.
+    kafka/: Kafka-related package.
+        kafka.go: Kafka integration code.
+    transformation/: Transformation module package.
+        transformer.go: Transformation logic.
+    memgraph/: Memgraph integration package.
+        memgraph.go: Memgraph connection and data processing.
+    cypher/: Cypher query package.
+        queries.go: Cypher queries.
+tests/: Test files for each package.
+scripts/: Shell scripts for various tasks.
+    initialize.sh: Initialization script.
+    start.sh: Script to start the application.
+    stop.sh: Script to stop the application.
+data/: Directory for storing data related to the project.
+    sample_data.json: Sample input data for testing.
+```
 ## Installation and Configuration
 
 - Set up the development environment using Docker and Docker Compose.
@@ -114,5 +114,4 @@ The input data should be modeled in the following format:
 
 ```json
 {"userId": "365", "movie": { "movieId": "7526", "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)", "genres": ["Adventure", "Fantasy"] }, "rating": "5", "timestamp": "45554125" }
-
-Feel free to customize this template based on the specific details and features of your project.
+```
